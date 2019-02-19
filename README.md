@@ -21,7 +21,7 @@ root@asciidoc:/data# docbook2pdf --version
 DocBook-utils version 0.6.14 (jw version 1.1)
 root@asciidoc:/data# 
 
-root@asciidoc:/data# asciidoc -b docbook hello-world.txt && docbook2pdf hello-world.xml
+root@asciidoc:/data# asciidoc -b docbook hello-world.adoc && docbook2pdf hello-world.xml
 Using catalogs: /etc/sgml/catalog
 Using stylesheet: /usr/share/docbook-utils/docbook-utils.dsl#print
 Working on: /data/hello-world.xml
@@ -31,6 +31,6 @@ root@asciidoc:/data#
 
 ## TODO
  - Setup appropriate user to not run tools (asciidoc, docbook2pdf, ...) as root and so not have generated files from root in host file system
- - Add hello-world.txt
+ - Add hello-world.adoc
 
 -- Mario
