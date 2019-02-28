@@ -4,7 +4,7 @@
 
 FROM mokolea/pandoc
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 LABEL maintainer="Mario Ban <mario.ban@bluewin.ch>"
 
 # Install additional packages
@@ -12,6 +12,9 @@ RUN apt-get update -y && \
     apt-get install -y -o Acquire::Retries=10 \
         --no-install-recommends \
       asciidoc \
+      asciidoc-dblatex \
+      docbook \
+      docbook-xml \
       docbook-utils \
       man-db && \
     apt-get clean && \
