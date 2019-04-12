@@ -7,7 +7,7 @@ Test AsciiDoc (includes [pandoc](https://hub.docker.com/r/mokolea/pandoc))
  - http://asciidoc.org/userguide.html
 
 ## Usage
- - Start container from markdown directory: `$ docker run -it -v $(pwd):/data --name asciidoc -h asciidoc mokolea/asciidoc:latest`
+ - Start container from current asciidoc-project directory: `$ docker run -it -v $(pwd):/data --name asciidoc -h asciidoc mokolea/asciidoc:latest`
  - Subsequent use of the same container: `$ docker start -ai asciidoc`
  - Start bash shell in the already running container: `$ docker exec -it asciidoc bash`
 
