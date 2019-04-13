@@ -2,6 +2,8 @@
 
 Test AsciiDoc (includes [pandoc](https://hub.docker.com/r/mokolea/pandoc))
 
+[![Release](https://img.shields.io/github/release/Mokolea/docker-asciidoc.svg)](https://github.com/Mokolea/docker-asciidoc/releases)
+
 ## AsciiDoc
  - http://asciidoc.org/
  - http://asciidoc.org/userguide.html
