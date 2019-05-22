@@ -10,6 +10,7 @@ Test AsciiDoc (includes [pandoc](https://hub.docker.com/r/mokolea/pandoc))
 
 ## Usage
  - Start container from current asciidoc-project directory: `$ docker run -it -v $(pwd):/data --name asciidoc -h asciidoc mokolea/asciidoc:latest`
+ - Optional: Set user and group IDs to override the default user: `$ docker run -it -v $(pwd):/data -u $(id -u):$(id -g) --name asciidoc -h asciidoc mokolea/asciidoc:latest`
  - Subsequent use of the same container: `$ docker start -ai asciidoc`
  - Start bash shell in the already running container: `$ docker exec -it asciidoc bash`
 
@@ -32,7 +33,9 @@ root@asciidoc:/data#
 ```
 
 ## TODO
- - Setup appropriate user to not run tools (asciidoc, docbook2pdf, ...) as root and so not have generated files from root in host file system
  - Add hello-world.adoc
+
+## Done
+ - Setup appropriate user to not run tools (asciidoc, docbook2pdf, ...) as root and so not have generated files from root in host file system
 
 -- Mario

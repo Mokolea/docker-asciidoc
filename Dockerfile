@@ -4,7 +4,7 @@
 
 FROM mokolea/pandoc
 
-LABEL version="1.0.1"
+LABEL version="1.1.0"
 LABEL maintainer="Mario Ban <mario.ban@bluewin.ch>"
 
 # Install additional packages
@@ -25,6 +25,9 @@ WORKDIR /data
 
 # Create mount point /data to hold an externally mounted volume
 VOLUME ["/data"]
+
+# Set user to use
+USER docker:docker
 
 # Set the default command to run when starting the container
 ENTRYPOINT ["/bin/bash"]
