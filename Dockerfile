@@ -7,6 +7,9 @@ FROM mokolea/pandoc
 LABEL version="1.1.0"
 LABEL maintainer="Mario Ban <mario.ban@bluewin.ch>"
 
+# Set user to use
+USER root
+
 # Install additional packages
 RUN apt-get update -y && \
     apt-get install -y -o Acquire::Retries=10 \
