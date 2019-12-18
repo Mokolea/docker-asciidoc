@@ -9,12 +9,12 @@ Test AsciiDoc (includes [pandoc](https://hub.docker.com/r/mokolea/pandoc))
  - http://asciidoc.org/userguide.html
 
 ## Usage
- - Start container from current asciidoc-project directory: `$ docker run -it -v $(pwd):/data --name asciidoc -h asciidoc mokolea/asciidoc:latest`
+ - Start new container from a current asciidoc-project directory: `$ docker run -it -v $(pwd):/data --name asciidoc -h asciidoc mokolea/asciidoc:latest`
  - Optional: Set user and group IDs to override the default image user (1000:1000) by using parameter:
     - `-u root` for root user
     - `-u $(id -u):$(id -g)` for current host user (experimental - does not work without additional configuration)
- - Subsequent use of the same container: `$ docker start -ai asciidoc`
- - Start bash shell in the already running container: `$ docker exec -it asciidoc bash`
+ - Subsequent use of the same stopped container: `$ docker start -ai asciidoc`
+ - Create bash shell session in the already running container: `$ docker exec -it asciidoc bash`
 
 ## Test
 ```
