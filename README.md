@@ -1,4 +1,4 @@
-# docker-asciidoc [![Size](https://img.shields.io/microbadger/image-size/mokolea/asciidoc.svg)](https://hub.docker.com/r/mokolea/asciidoc) [![Layers](https://img.shields.io/microbadger/layers/mokolea/asciidoc.svg)](https://hub.docker.com/r/mokolea/asciidoc)
+# docker-asciidoc [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/mokolea/asciidoc)](https://hub.docker.com/r/mokolea/asciidoc) [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/mokolea/asciidoc/latest)](https://hub.docker.com/r/mokolea/asciidoc)
 
 Test AsciiDoc (includes [pandoc](https://hub.docker.com/r/mokolea/pandoc))
 
